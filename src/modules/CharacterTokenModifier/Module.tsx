@@ -299,6 +299,33 @@ const LightSettings = ({tokenAttribs}) => {
 
             </div>
 
+            <h4>Updated Dynamic Lighting</h4>
+
+            <div className="inlineinputs" style="margin-bottom: 16px;">
+                <div style="color: #888; padding-left: 5px; margin-bottom: 8px">
+                    Token Vision
+                </div>
+                <InputWrapper propName="dyn_fog_emits_vision" type="checkbox" token={tokenAttribs}/>
+                Has Vision?
+                <InputWrapper propName="dyn_fog_emits_dark_vision" type="checkbox" token={tokenAttribs}/>
+                Night Vision?
+                <InputWrapper propName="dyn_fog_dark_vision_range" type="text" token={tokenAttribs}/>
+                ft.
+
+                <div style="color: #888; padding-left: 5px; margin-bottom: 8px">
+                    Token Emits Light
+                </div>
+                <InputWrapper propName="dyn_fog_emits_light" type="checkbox" token={tokenAttribs}/>
+                Bright Light
+                <InputWrapper propName="dyn_fog_light_range" type="checkbox" token={tokenAttribs}/>
+                Bright Light Distance (ft.)
+                <InputWrapper propName="dyn_fog_emits_dim_light" type="text" token={tokenAttribs}/>
+                Dim Light
+                <InputWrapper propName="dyn_fog_dim_light_range" type="text" token={tokenAttribs}/>
+                Dim Light Distance (ft.)
+
+            </div>
+
             <div style={{display: "grid", gridTemplateColumns: "auto auto"}}>
 
                 <div>
